@@ -12,37 +12,29 @@
 </head>
 	
 <body>
-	<h1> X-ray counterparts of pulsars </h1>
-	<h2> <a href="https://www.atnf.csiro.au/people/pulsar/psrcat/">ATNF</a> pulsars </h2>
+	<h1> X-ray counterparts of <a href="https://www.atnf.csiro.au/people/pulsar/psrcat/">ATNF</a> pulsars </h1>
 	<p> 
-		The dataset represents the largest sample of X-ray counterparts ever compiled, including 98 normal pulsars (NPs) and 133 millisecond pulsars (MSPs). 
-	</p>	
-	<ul>
-		<li>L<sub>X</sub>: X-ray luminosity in 0.3--10.0 keV for XMM-Newton, and in 0.5-7.0 keV for Chandra. </li>
-		<li>L<sub>SX</sub>: Soft X-ray luminosity in 0.3--2.0 keV for XMM-Newton, and in 0.5-2.0 keV for Chandra. </li>
-		<li>L<sub>HX</sub>: Hard X-ray luminosity in 2.0--10.0 keV for XMM-Newton, and in 2.0-7.0 keV for Chandra. </li>
-		<li>L<sub>G</sub>: G-ray luminosity in 100 MeV.</li>
-		<li>L: The error of luminosity plotted in figures is canculated from the flux error in catalogs, ranging between 10% ~ 30%. But in fact the error caused by DM is dominant, lacking in the table.</li>
-		<li><sup>a</sup>: The pulsars are MSP in GCs, and the X-ray luminosities of which are acquired from <a href="https://academic.oup.com/mnras/article/511/4/5964/6530660">Zhao & Heinke (2022)</a>.</li>
-		<li><sup>b</sup>: The pulsars are associated with PWNe or SNRs, and the X-ray luminosities of which are acquired from <a href="https://academic.oup.com/mnras/article/502/1/390/6123927">Hsiang & Chang (2021)</a>.</li>
-		<li><sup>c</sup>: The up-limits of these distance are inferred from the spin-down power Edot and the energy flux G<sub>100</sub> above 100 MeV, with reference listed in column "Ref". The distance of other pulsars are acquired from ATNF catalogue estimated by YMW16 electron distribution model <a href="https://iopscience.iop.org/article/10.3847/1538-4357/835/1/29">(Yao et al. 2017)</a>.</li>
-		<li><sup>d</sup>: The Pdot is not available or is minus given by ATNF catalogue. These pulsars are excluded in the following correlation analysis work.</li>
-	</ul>
-
+		The dataset represents the largest sample of X-ray counterparts of RPPs ever compiled, including 98 normal pulsars (NPs) and 133 millisecond pulsars (MSPs). 
+		This catalogue is constructed by correlating <a href="https://www.atnf.csiro.au/people/pulsar/psrcat/">ATNF pulsar catalogue v2.3.0</a> with 
+		<a herf="https://heasarc.gsfc.nasa.gov/W3Browse/xmm-newton/xmmssc.html">XMM-Newton Serendipitous Source Catalog (4XMM-DR13 Version)</a> and 
+		<a herf="https://cxc.harvard.edu/csc2/about.html">Chandra Source Catalog Release 2.0 (CSC 2.0)</a>.
+	</p>
+	<h2>Table1: Normal Pulsars</h2>
 	<table border="2">
-	
+		
 		<tr>
-			<th>Name</th>
+			<th>PSR name</th>
 			<th>X-ray source</th>
-			<th>P</th>
-			<th>P dot</th>
-			<th>Distance</th>
-			<th>L<sub>X</sub></th>
-			<th>L<sub>SX</sub></th>
-			<th>L<sub>HX</sub></th>
-			<th>L<sub>G</sub></th>
-			<th>Ref
+			<th>P<br>s</th>
+			<th>P dot<br>s s<sup>-1</sup></th>
+			<th>Distance<br>kpc</th>
+			<th>L<sub>X</sub><br>erg/s</th>
+			<th>L<sub>SX</sub><br>erg/s</th>
+			<th>L<sub>HX</sub><br>erg/s</th>
+			<th>L<sub>G</sub><br>erg/s</th>
+			<th>Ref</th>
 		</tr>
+
 		
 		<tr>
 			<th>J0002+6216</th>
@@ -71,318 +63,6 @@
 		</tr>
 		
 		<tr>
-			<th>J0023+0923</th>
-			<th>2CXO J002316.8+092323</th>
-			<th>0.00305</th>
-			<th>1.14×10<sup>-20</sup></th>
-			<th>1.818</th>
-			<th>6.87×10<sup>30</sup></th>
-			<th>6.09×10<sup>30</sup></th>
-			<th>7.71×10<sup>29</sup></th>
-			<th>3.03×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204C<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.005757</th>
-			<th>-4.99×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>1.70×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204D<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.005358</th>
-			<th>-3.42×10<sup>-21</sup></th>
-			<th>4.52</th>
-			<th>3.30×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204E<sup>a</sup></th>
-			<th>---</th>
-			<th>0.003536</th>
-			<th>9.85×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>5.00×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204F<sup>a</sup></th>
-			<th>---</th>
-			<th>0.002624</th>
-			<th>6.45×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.30×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204H<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.00321</th>
-			<th>-1.83×10<sup>-21</sup></th>
-			<th>4.52</th>
-			<th>3.20×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204J<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.002101</th>
-			<th>-9.79×10<sup>-21</sup></th>
-			<th>4.52</th>
-			<th>1.16×10<sup>31</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204L<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.004346</th>
-			<th>-1.22×10<sup>-19</sup></th>
-			<th>4.52</th>
-			<th>8.60×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204M<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.003677</th>
-			<th>-3.84×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.40×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204N<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.003054</th>
-			<th>-2.19×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.40×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204O<sup>a</sup></th>
-			<th>---</th>
-			<th>0.002643</th>
-			<th>3.03×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>1.08×10<sup>31</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204Q<sup>a</sup></th>
-			<th>---</th>
-			<th>0.004033</th>
-			<th>3.4×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.40×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204R<sup>a</sup></th>
-			<th>---</th>
-			<th>0.00348</th>
-			<th>1.48×10<sup>-19</sup></th>
-			<th>4.52</th>
-			<th>7.00×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204S<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.00283</th>
-			<th>-1.21×10<sup>-19</sup></th>
-			<th>4.52</th>
-			<th>4.20×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204T<sup>a</sup></th>
-			<th>---</th>
-			<th>0.007588</th>
-			<th>2.94×10<sup>-19</sup></th>
-			<th>4.52</th>
-			<th>1.50×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204U<sup>a</sup></th>
-			<th>---</th>
-			<th>0.004343</th>
-			<th>9.52×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>3.20×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204W<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.002352</th>
-			<th>-8.66×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.64×10<sup>31</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204X<sup>a</sup></th>
-			<th>---</th>
-			<th>0.004772</th>
-			<th>1.84×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.20×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204Y<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.002197</th>
-			<th>-3.52×10<sup>-20</sup></th>
-			<th>4.52</th>
-			<th>2.50×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204Z<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.004554</th>
-			<th>-4.54×10<sup>-21</sup></th>
-			<th>4.52</th>
-			<th>3.50×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204aa<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.00184</th>
-			<th>---</th>
-			<th>4.52</th>
-			<th>9.00×10<sup>29</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0024-7204ab<sup>a</sup></th>
-			<th>---</th>
-			<th>0.003705</th>
-			<th>9.82×10<sup>-21</sup></th>
-			<th>4.52</th>
-			<th>2.00×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J0030+0451</th>
-			<th>4XMM J003027.4+045139</th>
-			<th>0.004865</th>
-			<th>1.02×10<sup>-20</sup></th>
-			<th>0.329</th>
-			<th>3.52×10<sup>30</sup></th>
-			<th>3.22×10<sup>30</sup></th>
-			<th>2.92×10<sup>29</sup></th>
-			<th>7.43×10<sup>32</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0034-0534</th>
-			<th>4XMM J003421.8-053437</th>
-			<th>0.001877</th>
-			<th>4.97×10<sup>-21</sup></th>
-			<th>1.348</th>
-			<th>2.07×10<sup>30</sup></th>
-			<th>1.31×10<sup>30</sup></th>
-			<th>4.72×10<sup>29</sup></th>
-			<th>4.38×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J0058-7218</th>
 			<th>2CXO J005816.8-721805</th>
 			<th>0.021766</th>
@@ -392,19 +72,6 @@
 			<th>1.76×10<sup>34</sup></th>
 			<th>4.90×10<sup>34</sup></th>
 			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0101-6422</th>
-			<th>2CXO J010111.0-642230</th>
-			<th>0.002573</th>
-			<th>5.16×10<sup>-21</sup></th>
-			<th>1.001</th>
-			<th>4.28×10<sup>30</sup></th>
-			<th>3.80×10<sup>30</sup></th>
-			<th>6.52×10<sup>29</sup></th>
-			<th>1.56×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -444,46 +111,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>7.88×10<sup>34</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J0218+4232</th>
-			<th>4XMM J021806.2+423217</th>
-			<th>0.002323</th>
-			<th>7.74×10<sup>-20</sup></th>
-			<th>3.15</th>
-			<th>6.16×10<sup>32</sup></th>
-			<th>1.08×10<sup>32</sup></th>
-			<th>5.07×10<sup>32</sup></th>
-			<th>5.74×10<sup>34</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0307+7443</th>
-			<th>4XMM J030756.1+744313</th>
-			<th>0.003156</th>
-			<th>1.73×10<sup>-20</sup></th>
-			<th>0.386</th>
-			<th>1.34×10<sup>29</sup></th>
-			<th>1.16×10<sup>29</sup></th>
-			<th>4.48×10<sup>27</sup></th>
-			<th>2.93×10<sup>32</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0337+1715</th>
-			<th>4XMM J033743.8+171514</th>
-			<th>0.002733</th>
-			<th>1.77×10<sup>-20</sup></th>
-			<th>1.3</th>
-			<th>4.99×10<sup>30</sup></th>
-			<th>3.77×10<sup>30</sup></th>
-			<th>6.30×10<sup>29</sup></th>
-			<th>---</th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -509,7 +137,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -522,20 +150,7 @@
 			<th><3.62×10<sup>30</sup></th>
 			<th><3.72×10<sup>30</sup></th>
 			<th><2.02×10<sup>35</sup></th>
-			<th>3</th>
-		</tr>
-		
-		<tr>
-			<th>J0437-4715</th>
-			<th>2CXO J043715.8-471508</th>
-			<th>0.005757</th>
-			<th>5.73×10<sup>-20</sup></th>
-			<th>0.157</th>
-			<th>3.06×10<sup>29</sup></th>
-			<th>1.42×10<sup>29</sup></th>
-			<th>2.28×10<sup>28</sup></th>
-			<th>5.17×10<sup>31</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/476/2/2177/4850650>Zyuzin et al. (2018)</a></th>
 		</tr>
 		
 		<tr>
@@ -548,7 +163,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>6.85×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -561,7 +176,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -574,7 +189,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>4</th>
+			<th><a https://iopscience.iop.org/article/10.1086/510576>Ng et al. (2007)</a></th>
 		</tr>
 		
 		<tr>
@@ -587,7 +202,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>7.89×10<sup>36</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -600,20 +215,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>8.92×10<sup>33</sup></th>
-			<th>5</th>
-		</tr>
-		
-		<tr>
-			<th>J0613-0200</th>
-			<th>4XMM J061343.9-020046</th>
-			<th>0.003062</th>
-			<th>9.59×10<sup>-21</sup></th>
-			<th>0.78</th>
-			<th>9.38×10<sup>29</sup></th>
-			<th>7.42×10<sup>29</sup></th>
-			<th>1.98×10<sup>29</sup></th>
-			<th>2.78×10<sup>33</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/516/1/13/6653531>Tanashkin et al. (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -626,19 +228,6 @@
 			<th>4.92×10<sup>30</sup></th>
 			<th>3.09×10<sup>30</sup></th>
 			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0614-3329</th>
-			<th>4XMM J061410.3-332954</th>
-			<th>0.003149</th>
-			<th>1.74×10<sup>-20</sup></th>
-			<th>0.63</th>
-			<th>3.80×10<sup>30</sup></th>
-			<th>3.39×10<sup>30</sup></th>
-			<th>2.39×10<sup>29</sup></th>
-			<th>5.44×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -678,33 +267,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>1.82×10<sup>34</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J0635+0533<sup>cd</sup></th>
-			<th>4XMM J063518.2+053306</th>
-			<th>0.033856</th>
-			<th>---</th>
-			<th><5</th>
-			<th><9.36×10<sup>32</sup></th>
-			<th><5.94×10<sup>31</sup></th>
-			<th><9.31×10<sup>32</sup></th>
-			<th>---</th>
-			<th>6</th>
-		</tr>
-		
-		<tr>
-			<th>J0636+5128</th>
-			<th>4XMM J063604.9+512900</th>
-			<th>0.002869</th>
-			<th>3.51×10<sup>-21</sup></th>
-			<th>0.714</th>
-			<th>1.68×10<sup>30</sup></th>
-			<th>9.84×10<sup>29</sup></th>
-			<th>6.70×10<sup>29</sup></th>
-			<th>---</th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -717,33 +280,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>2.64×10<sup>32</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J0737-3039A</th>
-			<th>4XMM J073751.2-303940</th>
-			<th>0.022699</th>
-			<th>1.76×10<sup>-18</sup></th>
-			<th>1.1</th>
-			<th>5.87×10<sup>30</sup></th>
-			<th>5.04×10<sup>30</sup></th>
-			<th>5.36×10<sup>29</sup></th>
-			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0740+6620</th>
-			<th>4XMM J074045.7+662033</th>
-			<th>0.002886</th>
-			<th>1.22×10<sup>-20</sup></th>
-			<th>1.15</th>
-			<th>3.41×10<sup>30</sup></th>
-			<th>2.91×10<sup>30</sup></th>
-			<th>3.10×10<sup>29</sup></th>
-			<th>4.48×10<sup>32</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -756,19 +293,6 @@
 			<th>1.49×10<sup>30</sup></th>
 			<th>1.65×10<sup>30</sup></th>
 			<th>7.28×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J0751+1807</th>
-			<th>4XMM J075109.2+180735</th>
-			<th>0.003479</th>
-			<th>7.79×10<sup>-21</sup></th>
-			<th>1.1</th>
-			<th>5.50×10<sup>30</sup></th>
-			<th>3.67×10<sup>30</sup></th>
-			<th>1.81×10<sup>30</sup></th>
-			<th>1.48×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -795,7 +319,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -838,19 +362,6 @@
 		</tr>
 		
 		<tr>
-			<th>J0952-0607</th>
-			<th>4XMM J095208.3-060724</th>
-			<th>0.001414</th>
-			<th>4.77×10<sup>-21</sup></th>
-			<th>7.6</th>
-			<th>6.29×10<sup>31</sup></th>
-			<th>2.94×10<sup>31</sup></th>
-			<th>3.45×10<sup>31</sup></th>
-			<th>1.10×10<sup>34</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J0953+0755</th>
 			<th>4XMM J095309.2+075536</th>
 			<th>0.253065</th>
@@ -859,19 +370,6 @@
 			<th>7.62×10<sup>29</sup></th>
 			<th>3.27×10<sup>29</sup></th>
 			<th>4.36×10<sup>29</sup></th>
-			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1012+5307</th>
-			<th>4XMM J101233.3+530701</th>
-			<th>0.005256</th>
-			<th>1.71×10<sup>-20</sup></th>
-			<th>0.7</th>
-			<th>3.10×10<sup>30</sup></th>
-			<th>2.16×10<sup>30</sup></th>
-			<th>8.10×10<sup>29</sup></th>
 			<th>---</th>
 			<th>T</th>
 		</tr>
@@ -886,20 +384,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>8.38×10<sup>34</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1023+0038</th>
-			<th>4XMM J102347.6+003841</th>
-			<th>0.001688</th>
-			<th>6.93×10<sup>-21</sup></th>
-			<th>1.19</th>
-			<th>2.47×10<sup>33</sup></th>
-			<th>8.85×10<sup>32</sup></th>
-			<th>1.58×10<sup>33</sup></th>
-			<th>7.25×10<sup>33</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -916,19 +401,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1024-0719</th>
-			<th>4XMM J102438.7-071918</th>
-			<th>0.005162</th>
-			<th>1.86×10<sup>-20</sup></th>
-			<th>1.22</th>
-			<th>2.41×10<sup>30</sup></th>
-			<th>2.10×10<sup>30</sup></th>
-			<th>2.70×10<sup>29</sup></th>
-			<th>7.67×10<sup>32</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J1028-5819</th>
 			<th>2CXO J102827.8-581906</th>
 			<th>0.091403</th>
@@ -938,19 +410,6 @@
 			<th>7.40×10<sup>30</sup></th>
 			<th>8.63×10<sup>30</sup></th>
 			<th>5.94×10<sup>34</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1035-6720</th>
-			<th>4XMM J103527.5-672013</th>
-			<th>0.002872</th>
-			<th>4.65×10<sup>-20</sup></th>
-			<th>1.461</th>
-			<th>4.99×10<sup>30</sup></th>
-			<th>2.04×10<sup>30</sup></th>
-			<th>2.72×10<sup>30</sup></th>
-			<th>4.81×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -977,7 +436,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>1.86×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -1003,7 +462,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -1020,19 +479,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1124-3653</th>
-			<th>2CXO J112401.1-365319</th>
-			<th>0.00241</th>
-			<th>6.01×10<sup>-21</sup></th>
-			<th>0.987</th>
-			<th>7.00×10<sup>30</sup></th>
-			<th>2.80×10<sup>30</sup></th>
-			<th>4.34×10<sup>30</sup></th>
-			<th>1.46×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J1124-5916<sup>b</sup></th>
 			<th>2CXO J112439.1-591619</th>
 			<th>0.135477</th>
@@ -1042,7 +488,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>1.68×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -1068,32 +514,6 @@
 			<th>5.88×10<sup>29</sup></th>
 			<th>2.14×10<sup>29</sup></th>
 			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1227-4853</th>
-			<th>4XMM J122758.7-485342</th>
-			<th>0.001686</th>
-			<th>1.11×10<sup>-20</sup></th>
-			<th>1.613</th>
-			<th>4.62×10<sup>33</sup></th>
-			<th>1.14×10<sup>33</sup></th>
-			<th>3.47×10<sup>33</sup></th>
-			<th>6.98×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1231-1411</th>
-			<th>4XMM J123111.3-141143</th>
-			<th>0.003684</th>
-			<th>2.26×10<sup>-20</sup></th>
-			<th>0.42</th>
-			<th>4.04×10<sup>30</sup></th>
-			<th>3.48×10<sup>30</sup></th>
-			<th>5.19×10<sup>29</sup></th>
-			<th>2.13×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -1124,58 +544,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1306-4035<sup>d</sup></th>
-			<th>4XMM J130656.2-403523</th>
-			<th>0.002205</th>
-			<th>---</th>
-			<th>4.7</th>
-			<th>1.99×10<sup>33</sup></th>
-			<th>3.07×10<sup>32</sup></th>
-			<th>1.68×10<sup>33</sup></th>
-			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1311-3430</th>
-			<th>4XMM J131145.7-343030</th>
-			<th>0.00256</th>
-			<th>2.10×10<sup>-20</sup></th>
-			<th>2.43</th>
-			<th>1.35×10<sup>32</sup></th>
-			<th>4.04×10<sup>31</sup></th>
-			<th>9.43×10<sup>31</sup></th>
-			<th>1.81×10<sup>34</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1326-4728A<sup>a</sup></th>
-			<th>---</th>
-			<th>0.004109</th>
-			<th>2.74×10<sup>-20</sup></th>
-			<th>5.43</th>
-			<th>1.90×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1326-4728B<sup>ad</sup></th>
-			<th>---</th>
-			<th>0.004792</th>
-			<th>-5.43×10<sup>-20</sup></th>
-			<th>5.43</th>
-			<th>1.07×10<sup>31</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
 			<th>J1357-6429<sup>b</sup></th>
 			<th>4XMM J135702.6-642929</th>
 			<th>0.166108</th>
@@ -1185,20 +553,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>3.39×10<sup>34</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1400-1431</th>
-			<th>4XMM J140037.0-143146</th>
-			<th>0.003084</th>
-			<th>7.23×10<sup>-21</sup></th>
-			<th>0.278</th>
-			<th>1.05×10<sup>29</sup></th>
-			<th>9.13×10<sup>28</sup></th>
-			<th>1.31×10<sup>28</sup></th>
-			<th>5.93×10<sup>31</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -1211,7 +566,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>7</th>
+			<th><a https://iopscience.iop.org/article/10.1088/0004-637X/716/1/663>Renaud et al. (2010)</a></th>
 		</tr>
 		
 		<tr>
@@ -1224,7 +579,7 @@
 			<th><3.91×10<sup>32</sup></th>
 			<th><1.98×10<sup>31</sup></th>
 			<th>---</th>
-			<th>8</th>
+			<th><a https://iopscience.iop.org/article/10.3847/1538-4357/ac8743>Ho et al. (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1237,19 +592,6 @@
 			<th>4.90×10<sup>30</sup></th>
 			<th>3.23×10<sup>31</sup></th>
 			<th>9.80×10<sup>34</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1417-4402<sup>d</sup></th>
-			<th>2CXO J141730.5-440257</th>
-			<th>0.002664</th>
-			<th>---</th>
-			<th>4.4</th>
-			<th>1.62×10<sup>33</sup></th>
-			<th>4.76×10<sup>32</sup></th>
-			<th>1.14×10<sup>33</sup></th>
-			<th>---</th>
 			<th>T</th>
 		</tr>
 		
@@ -1276,7 +618,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>4.90×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -1293,19 +635,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1431-4715</th>
-			<th>4XMM J143144.4-471524</th>
-			<th>0.002012</th>
-			<th>1.41×10<sup>-20</sup></th>
-			<th>1.562</th>
-			<th>7.11×10<sup>30</sup></th>
-			<th>2.46×10<sup>30</sup></th>
-			<th>4.52×10<sup>30</sup></th>
-			<th>1.74×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J1437-5959</th>
 			<th>4XMM J143701.9-595901</th>
 			<th>0.061696</th>
@@ -1315,19 +644,6 @@
 			<th>2.07×10<sup>30</sup></th>
 			<th>2.17×10<sup>32</sup></th>
 			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1446-4701</th>
-			<th>4XMM J144635.8-470126</th>
-			<th>0.002195</th>
-			<th>9.81×10<sup>-21</sup></th>
-			<th>1.569</th>
-			<th>5.02×10<sup>30</sup></th>
-			<th>3.00×10<sup>30</sup></th>
-			<th>1.89×10<sup>30</sup></th>
-			<th>2.26×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -1367,7 +683,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>1.66×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -1380,7 +696,1234 @@
 			<th>---</th>
 			<th>---</th>
 			<th>2.78×10<sup>34</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1531-5610</th>
+			<th>2CXO J153127.8-561055</th>
+			<th>0.084206</th>
+			<th>1.38×10<sup>-14</sup></th>
+			<th>2.841</th>
+			<th>1.81×10<sup>31</sup></th>
+			<th>3.31×10<sup>30</sup></th>
+			<th>1.48×10<sup>31</sup></th>
+			<th>1.76×10<sup>34</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1617-5055<sup>b</sup></th>
+			<th>2CXO J161729.3-505512</th>
+			<th>0.069357</th>
+			<th>1.35×10<sup>-13</sup></th>
+			<th>4.743</th>
+			<th>9.52×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1640-4631</th>
+			<th>2CXO J164043.5-463135</th>
+			<th>0.206443</th>
+			<th>9.76×10<sup>-13</sup></th>
+			<th>12.75</th>
+			<th>1.90×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th>9</th>
+		</tr>
+		
+		<tr>
+			<th>J1709-4429<sup>b</sup></th>
+			<th>4XMM J170942.5-442906</th>
+			<th>0.102459</th>
+			<th>9.30×10<sup>-14</sup></th>
+			<th>2.6</th>
+			<th>1.82×10<sup>32</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>1.11×10<sup>36</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1718-3825<sup>b</sup></th>
+			<th>2CXO J171813.6-382517</th>
+			<th>0.0746749</th>
+			<th>1.32×10<sup>-14</sup></th>
+			<th>3.488</th>
+			<th>2.43×10<sup>32</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>1.51×10<sup>35</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1722-3712</th>
+			<th>4XMM J172259.2-371206</th>
+			<th>0.23618</th>
+			<th>1.09×10<sup>-14</sup></th>
+			<th>2.477</th>
+			<th>2.10×10<sup>31</sup></th>
+			<th>1.68×10<sup>31</sup></th>
+			<th>2.89×10<sup>30</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1731-4744</th>
+			<th>4XMM J173142.3-474438</th>
+			<th>0.829894</th>
+			<th>1.64×10<sup>-13</sup></th>
+			<th>5.54</th>
+			<th>4.78×10<sup>31</sup></th>
+			<th>2.50×10<sup>31</sup></th>
+			<th>2.08×10<sup>31</sup></th>
+			<th>2.30×10<sup>32</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1732-3131</th>
+			<th>2CXO J173233.5-313123</th>
+			<th>0.196543</th>
+			<th>2.80×10<sup>-14</sup></th>
+			<th>0.641</th>
+			<th>1.11×10<sup>30</sup></th>
+			<th>6.14×10<sup>29</sup></th>
+			<th>5.30×10<sup>29</sup></th>
+			<th>8.79×10<sup>33</sup></th>
+			<th><a https://academic.oup.com/mnras/article/520/3/4068/7028782>Chang et al. (2023)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1734-3333</th>
+			<th>4XMM J173427.0-333321</th>
+			<th>1.169341</th>
+			<th>2.28×10<sup>-12</sup></th>
+			<th>4.461</th>
+			<th>3.38×10<sup>31</sup></th>
+			<th>2.16×10<sup>31</sup></th>
+			<th>1.16×10<sup>31</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1740+1000</th>
+			<th>4XMM J174025.9+100006</th>
+			<th>0.154096</th>
+			<th>2.13×10<sup>-14</sup></th>
+			<th>1.227</th>
+			<th>2.68×10<sup>31</sup></th>
+			<th>2.32×10<sup>31</sup></th>
+			<th>3.83×10<sup>30</sup></th>
+			<th>6.49×10<sup>32</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1741-2054</th>
+			<th>2CXO J174157.2-205412</th>
+			<th>0.4137</th>
+			<th>1.70×10<sup>-14</sup></th>
+			<th>0.3</th>
+			<th>3.65×10<sup>30</sup></th>
+			<th>2.61×10<sup>30</sup></th>
+			<th>1.04×10<sup>30</sup></th>
+			<th>1.28×10<sup>33</sup></th>
+			<th><a https://academic.oup.com/mnras/article/520/3/4068/7028782>Chang et al. (2023)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1747-2809</th>
+			<th>2CXO J174722.7-280914</th>
+			<th>0.052153</th>
+			<th>1.56×10<sup>-13</sup></th>
+			<th>8.141</th>
+			<th>5.30×10<sup>32</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://iopscience.iop.org/article/10.1088/0004-637X/705/1/1>Camilo et al. (2009)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1747-2958<sup>b</sup></th>
+			<th>4XMM J174715.6-295801</th>
+			<th>0.098814</th>
+			<th>6.13×10<sup>-14</sup></th>
+			<th>2.52</th>
+			<th>1.48×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>4.30×10<sup>35</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1801-2451<sup>b</sup></th>
+			<th>4XMM J180059.9-245127</th>
+			<th>0.124924</th>
+			<th>1.28×10<sup>-13</sup></th>
+			<th>3.803</th>
+			<th>1.54×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>5.52×10<sup>34</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1803-2137<sup>b</sup></th>
+			<th>4XMM J180351.4-213707</th>
+			<th>0.133667</th>
+			<th>1.34×10<sup>-13</sup></th>
+			<th>4.4</th>
+			<th>6.76×10<sup>31</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1809-1917<sup>b</sup></th>
+			<th>4XMM J180943.1-191737</th>
+			<th>0.082755</th>
+			<th>2.55×10<sup>-14</sup></th>
+			<th>3.268</th>
+			<th>3.23×10<sup>31</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1809-2332</th>
+			<th>2CXO J180950.2-233222</th>
+			<th>0.146789</th>
+			<th>3.44×10<sup>-14</sup></th>
+			<th>0.88</th>
+			<th>6.60×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>1.47×10<sup>35</sup></th>
+			<th><a https://iopscience.iop.org/article/10.1088/0004-637X/755/2/151>Van Etten et al. (2012)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1811-1925<sup>b</sup></th>
+			<th>4XMM J181129.2-192528</th>
+			<th>0.064667</th>
+			<th>4.40×10<sup>-14</sup></th>
+			<th>5</th>
+			<th>6.97×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1813-1246</th>
+			<th>4XMM J181323.7-124600</th>
+			<th>0.048073</th>
+			<th>1.76×10<sup>-14</sup></th>
+			<th>2.635</th>
+			<th>8.19×10<sup>32</sup></th>
+			<th>2.29×10<sup>31</sup></th>
+			<th>7.96×10<sup>32</sup></th>
+			<th>2.05×10<sup>35</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1813-1749<sup>b</sup></th>
+			<th>4XMM J181335.0-174957</th>
+			<th>0.044741</th>
+			<th>1.27×10<sup>-13</sup></th>
+			<th>6.147</th>
+			<th>5.92×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+
+		<tr>
+			<th>J1838-0537</th>
+			<th>4XMM J183856.1-053702</th>
+			<th>0.145754</th>
+			<th>4.51×10<sup>-13</sup></th>
+			<th>1.3</th>
+			<th>7.10×10<sup>30</sup></th>
+			<th>2.11×10<sup>28</sup></th>
+			<th>7.07×10<sup>30</sup></th>
+			<th>2.41×10<sup>34</sup></th>
+			<th><a https://academic.oup.com/mnras/article/520/3/4068/7028782>Chang et al. (2023)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1838-0655<sup>b</sup></th>
+			<th>4XMM J183803.1-065534</th>
+			<th>0.070498</th>
+			<th>4.92×10<sup>-14</sup></th>
+			<th>6.6</th>
+			<th>3.55×10<sup>34</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1846+0919</th>
+			<th>2CXO J184625.8+091949</th>
+			<th>0.225552</th>
+			<th>9.93×10<sup>-15</sup></th>
+			<th>1.53</th>
+			<th>1.83×10<sup>30</sup></th>
+			<th>7.38×10<sup>29</sup></th>
+			<th>1.15×10<sup>30</sup></th>
+			<th>9.98×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1849-0001<sup>c</sup></th>
+			<th>4XMM J184901.6-000117</th>
+			<th>0.038523</th>
+			<th>1.42×10<sup>-14</sup></th>
+			<th><7</th>
+			<th><2.53×10<sup>34</sup></th>
+			<th><2.02×10<sup>32</sup></th>
+			<th><2.51×10<sup>34</sup></th>
+			<th>---</th>
+			<th><a https://iopscience.iop.org/article/10.3847/1538-4357/ac8743>Ho et al. (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1856+0113<sup>b</sup></th>
+			<th>4XMM J185610.6+011324</th>
+			<th>0.26744</th>
+			<th>2.08×10<sup>-13</sup></th>
+			<th>3.3</th>
+			<th>1.08×10<sup>32</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1856+0245</th>
+			<th>2CXO J185650.9+024547</th>
+			<th>0.080907</th>
+			<th>6.21×10<sup>-14</sup></th>
+			<th>6.318</th>
+			<th>1.46×10<sup>32</sup></th>
+			<th>2.69×10<sup>30</sup></th>
+			<th>1.46×10<sup>32</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1907+0602</th>
+			<th>4XMM J190754.8+060214</th>
+			<th>0.106643</th>
+			<th>8.65×10<sup>-14</sup></th>
+			<th>2.576</th>
+			<th>4.43×10<sup>31</sup></th>
+			<th>2.70×10<sup>30</sup></th>
+			<th>4.13×10<sup>31</sup></th>
+			<th>2.36×10<sup>35</sup></th>
+			<th><a https://pubs.aip.org/aip/acp/article-abstract/1505/1/329/822668/Multi-wavelength-studies-of-the-gamma-ray-pulsar?redirectedFrom=fulltext>Pandel & Scott (2012)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1930+1852<sup>b</sup></th>
+			<th>4XMM J193030.0+185214</th>
+			<th>0.136855</th>
+			<th>7.51×10<sup>-13</sup></th>
+			<th>7</th>
+			<th>1.55×10<sup>34</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1932+1059<sup>b</sup></th>
+			<th>4XMM J193214.0+105933</th>
+			<th>0.226519</th>
+			<th>1.16×10<sup>-15</sup></th>
+			<th>0.31</th>
+			<th>2.97×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1952+3252<sup>b</sup></th>
+			<th>2CXO J195258.2+325240</th>
+			<th>0.039531</th>
+			<th>5.84×10<sup>-15</sup></th>
+			<th>3</th>
+			<th>2.91×10<sup>33</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>1.59×10<sup>35</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1957+5033</th>
+			<th>4XMM J195738.1+503321</th>
+			<th>0.374807</th>
+			<th>7.08×10<sup>-15</sup></th>
+			<th>1.365</th>
+			<th>1.53×10<sup>31</sup></th>
+			<th>7.03×10<sup>30</sup></th>
+			<th>7.41×10<sup>30</sup></th>
+			<th>5.83×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1958+2846</th>
+			<th>2CXO J195840.0+284554</th>
+			<th>0.290389</th>
+			<th>2.12×10<sup>-13</sup></th>
+			<th>1.95</th>
+			<th>3.56×10<sup>30</sup></th>
+			<th>3.66×10<sup>30</sup></th>
+			<th>---</th>
+			<th>4.82×10<sup>34</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J2017+3625<sup>c</sup></th>
+			<th>2CXO J201755.8+362507</th>
+			<th>0.166749</th>
+			<th>1.36×10<sup>-15</sup></th>
+			<th><0.656</th>
+			<th><1.03×10<sup>30</sup></th>
+			<th><2.06×10<sup>29</sup></th>
+			<th><8.56×10<sup>29</sup></th>
+			<th><2.01×10<sup>36</sup></th>
+			<th><a https://academic.oup.com/mnras/article/476/2/2177/4850650>Zyuzin et al. (2018)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J2021+3651<sup>b</sup></th>
+			<th>4XMM J202105.3+365103</th>
+			<th>0.103741</th>
+			<th>9.57×10<sup>-14</sup></th>
+			<th>1.8</th>
+			<th>6.34×10<sup>32</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>1.91×10<sup>35</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J2021+4026</th>
+			<th>4XMM J202130.7+402645</th>
+			<th>0.265328</th>
+			<th>5.48×10<sup>-14</sup></th>
+			<th>2.15</th>
+			<th>2.50×10<sup>31</sup></th>
+			<th>1.01×10<sup>31</sup></th>
+			<th>1.46×10<sup>31</sup></th>
+			<th>2.16×10<sup>35</sup></th>
+			<th><a https://www.aanda.org/articles/aa/full_html/2023/08/aa45873-23/aa45873-23.html>Razzano et al. (2023)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J2022+3842</th>
+			<th>2CXO J202221.6+384214</th>
+			<th>0.048579</th>
+			<th>8.61×10<sup>-14</sup></th>
+			<th>10</th>
+			<th>4.76×10<sup>33</sup></th>
+			<th>3.04×10<sup>32</sup></th>
+			<th>4.49×10<sup>33</sup></th>
+			<th>3.17×10<sup>35</sup></th>
+			<th><a https://academic.oup.com/mnras/article/520/3/4068/7028782>Chang et al. (2023)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J2030+4415</th>
+			<th>2CXO J203051.3+441539</th>
+			<th>0.227071</th>
+			<th>5.05×10<sup>-15</sup></th>
+			<th>0.72</th>
+			<th>9.08×10<sup>29</sup></th>
+			<th>3.89×10<sup>29</sup></th>
+			<th>5.03×10<sup>29</sup></th>
+			<th>1.32×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J2043+2740</th>
+			<th>4XMM J204343.4+274056</th>
+			<th>0.096131</th>
+			<th>1.27×10<sup>-15</sup></th>
+			<th>1.48</th>
+			<th>7.69×10<sup>30</sup></th>
+			<th>3.86×10<sup>30</sup></th>
+			<th>3.30×10<sup>30</sup></th>
+			<th>2.37×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J2055+2539</th>
+			<th>4XMM J205548.9+253958</th>
+			<th>0.319561</th>
+			<th>4.10×10<sup>-15</sup></th>
+			<th>0.62</th>
+			<th>9.89×10<sup>29</sup></th>
+			<th>4.06×10<sup>29</sup></th>
+			<th>5.82×10<sup>29</sup></th>
+			<th>2.44×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J2139+4716<sup>c</sup></th>
+			<th>2CXO J213955.9+471613</th>
+			<th>0.282849</th>
+			<th>1.79×10<sup>-15</sup></th>
+			<th><0.8</th>
+			<th><5.7×10<sup>29</sup></th>
+			<th><1.1×10<sup>29</sup></th>
+			<th><4.88×10<sup>29</sup></th>
+			<th><4.65×10<sup>35</sup></th>
+			<th><a https://iopscience.iop.org/article/10.1088/0004-637X/744/2/105>Pletsch et al. (2012)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J2225+6535<sup>b</sup></th>
+			<th>2CXO J222552.8+653536</th>
+			<th>0.682542</th>
+			<th>9.66×10<sup>-15</sup></th>
+			<th>0.9</th>
+			<th>1.45×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J2229+6114<sup>b</sup></th>
+			<th>2CXO J222905.2+611409</th>
+			<th>0.051648</th>
+			<th>7.74×10<sup>-14</sup></th>
+			<th>3</th>
+			<th>3.82×10<sup>32</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>2.59×10<sup>35</sup></th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
+		</tr>
+
+	</table>
+
+	<h3>Table2: Millisecond Pulsars</h3>
+	<table border="2">
+	
+		<tr>
+			<th>PSR name</th>
+			<th>X-ray source</th>
+			<th>P<br>s</th>
+			<th>P dot<br>s s<sup>-1</sup></th>
+			<th>Distance<br>kpc</th>
+			<th>L<sub>X</sub><br>erg/s</th>
+			<th>L<sub>SX</sub><br>erg/s</th>
+			<th>L<sub>HX</sub><br>erg/s</th>
+			<th>L<sub>G</sub><br>erg/s</th>
+			<th>Ref</th>
+		</tr>
+		
+		<tr>
+			<th>J0023+0923</th>
+			<th>2CXO J002316.8+092323</th>
+			<th>0.00305</th>
+			<th>1.14×10<sup>-20</sup></th>
+			<th>1.818</th>
+			<th>6.87×10<sup>30</sup></th>
+			<th>6.09×10<sup>30</sup></th>
+			<th>7.71×10<sup>29</sup></th>
+			<th>3.03×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204C<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.005757</th>
+			<th>-4.99×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>1.70×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204D<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.005358</th>
+			<th>-3.42×10<sup>-21</sup></th>
+			<th>4.52</th>
+			<th>3.30×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204E<sup>a</sup></th>
+			<th>---</th>
+			<th>0.003536</th>
+			<th>9.85×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>5.00×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204F<sup>a</sup></th>
+			<th>---</th>
+			<th>0.002624</th>
+			<th>6.45×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.30×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204H<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.00321</th>
+			<th>-1.83×10<sup>-21</sup></th>
+			<th>4.52</th>
+			<th>3.20×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204J<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.002101</th>
+			<th>-9.79×10<sup>-21</sup></th>
+			<th>4.52</th>
+			<th>1.16×10<sup>31</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204L<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.004346</th>
+			<th>-1.22×10<sup>-19</sup></th>
+			<th>4.52</th>
+			<th>8.60×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204M<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.003677</th>
+			<th>-3.84×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.40×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204N<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.003054</th>
+			<th>-2.19×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.40×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204O<sup>a</sup></th>
+			<th>---</th>
+			<th>0.002643</th>
+			<th>3.03×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>1.08×10<sup>31</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204Q<sup>a</sup></th>
+			<th>---</th>
+			<th>0.004033</th>
+			<th>3.4×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.40×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204R<sup>a</sup></th>
+			<th>---</th>
+			<th>0.00348</th>
+			<th>1.48×10<sup>-19</sup></th>
+			<th>4.52</th>
+			<th>7.00×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204S<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.00283</th>
+			<th>-1.21×10<sup>-19</sup></th>
+			<th>4.52</th>
+			<th>4.20×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204T<sup>a</sup></th>
+			<th>---</th>
+			<th>0.007588</th>
+			<th>2.94×10<sup>-19</sup></th>
+			<th>4.52</th>
+			<th>1.50×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204U<sup>a</sup></th>
+			<th>---</th>
+			<th>0.004343</th>
+			<th>9.52×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>3.20×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204W<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.002352</th>
+			<th>-8.66×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.64×10<sup>31</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204X<sup>a</sup></th>
+			<th>---</th>
+			<th>0.004772</th>
+			<th>1.84×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.20×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204Y<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.002197</th>
+			<th>-3.52×10<sup>-20</sup></th>
+			<th>4.52</th>
+			<th>2.50×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204Z<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.004554</th>
+			<th>-4.54×10<sup>-21</sup></th>
+			<th>4.52</th>
+			<th>3.50×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204aa<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.00184</th>
+			<th>---</th>
+			<th>4.52</th>
+			<th>9.00×10<sup>29</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0024-7204ab<sup>a</sup></th>
+			<th>---</th>
+			<th>0.003705</th>
+			<th>9.82×10<sup>-21</sup></th>
+			<th>4.52</th>
+			<th>2.00×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J0030+0451</th>
+			<th>4XMM J003027.4+045139</th>
+			<th>0.004865</th>
+			<th>1.02×10<sup>-20</sup></th>
+			<th>0.329</th>
+			<th>3.52×10<sup>30</sup></th>
+			<th>3.22×10<sup>30</sup></th>
+			<th>2.92×10<sup>29</sup></th>
+			<th>7.43×10<sup>32</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0034-0534</th>
+			<th>4XMM J003421.8-053437</th>
+			<th>0.001877</th>
+			<th>4.97×10<sup>-21</sup></th>
+			<th>1.348</th>
+			<th>2.07×10<sup>30</sup></th>
+			<th>1.31×10<sup>30</sup></th>
+			<th>4.72×10<sup>29</sup></th>
+			<th>4.38×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0101-6422</th>
+			<th>2CXO J010111.0-642230</th>
+			<th>0.002573</th>
+			<th>5.16×10<sup>-21</sup></th>
+			<th>1.001</th>
+			<th>4.28×10<sup>30</sup></th>
+			<th>3.80×10<sup>30</sup></th>
+			<th>6.52×10<sup>29</sup></th>
+			<th>1.56×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0218+4232</th>
+			<th>4XMM J021806.2+423217</th>
+			<th>0.002323</th>
+			<th>7.74×10<sup>-20</sup></th>
+			<th>3.15</th>
+			<th>6.16×10<sup>32</sup></th>
+			<th>1.08×10<sup>32</sup></th>
+			<th>5.07×10<sup>32</sup></th>
+			<th>5.74×10<sup>34</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0307+7443</th>
+			<th>4XMM J030756.1+744313</th>
+			<th>0.003156</th>
+			<th>1.73×10<sup>-20</sup></th>
+			<th>0.386</th>
+			<th>1.34×10<sup>29</sup></th>
+			<th>1.16×10<sup>29</sup></th>
+			<th>4.48×10<sup>27</sup></th>
+			<th>2.93×10<sup>32</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0337+1715</th>
+			<th>4XMM J033743.8+171514</th>
+			<th>0.002733</th>
+			<th>1.77×10<sup>-20</sup></th>
+			<th>1.3</th>
+			<th>4.99×10<sup>30</sup></th>
+			<th>3.77×10<sup>30</sup></th>
+			<th>6.30×10<sup>29</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0437-4715</th>
+			<th>2CXO J043715.8-471508</th>
+			<th>0.005757</th>
+			<th>5.73×10<sup>-20</sup></th>
+			<th>0.157</th>
+			<th>3.06×10<sup>29</sup></th>
+			<th>1.42×10<sup>29</sup></th>
+			<th>2.28×10<sup>28</sup></th>
+			<th>5.17×10<sup>31</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0613-0200</th>
+			<th>4XMM J061343.9-020046</th>
+			<th>0.003062</th>
+			<th>9.59×10<sup>-21</sup></th>
+			<th>0.78</th>
+			<th>9.38×10<sup>29</sup></th>
+			<th>7.42×10<sup>29</sup></th>
+			<th>1.98×10<sup>29</sup></th>
+			<th>2.78×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0614-3329</th>
+			<th>4XMM J061410.3-332954</th>
+			<th>0.003149</th>
+			<th>1.74×10<sup>-20</sup></th>
+			<th>0.63</th>
+			<th>3.80×10<sup>30</sup></th>
+			<th>3.39×10<sup>30</sup></th>
+			<th>2.39×10<sup>29</sup></th>
+			<th>5.44×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0636+5128</th>
+			<th>4XMM J063604.9+512900</th>
+			<th>0.002869</th>
+			<th>3.51×10<sup>-21</sup></th>
+			<th>0.714</th>
+			<th>1.68×10<sup>30</sup></th>
+			<th>9.84×10<sup>29</sup></th>
+			<th>6.70×10<sup>29</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0737-3039A</th>
+			<th>4XMM J073751.2-303940</th>
+			<th>0.022699</th>
+			<th>1.76×10<sup>-18</sup></th>
+			<th>1.1</th>
+			<th>5.87×10<sup>30</sup></th>
+			<th>5.04×10<sup>30</sup></th>
+			<th>5.36×10<sup>29</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0740+6620</th>
+			<th>4XMM J074045.7+662033</th>
+			<th>0.002886</th>
+			<th>1.22×10<sup>-20</sup></th>
+			<th>1.15</th>
+			<th>3.41×10<sup>30</sup></th>
+			<th>2.91×10<sup>30</sup></th>
+			<th>3.10×10<sup>29</sup></th>
+			<th>4.48×10<sup>32</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0751+1807</th>
+			<th>4XMM J075109.2+180735</th>
+			<th>0.003479</th>
+			<th>7.79×10<sup>-21</sup></th>
+			<th>1.1</th>
+			<th>5.50×10<sup>30</sup></th>
+			<th>3.67×10<sup>30</sup></th>
+			<th>1.81×10<sup>30</sup></th>
+			<th>1.48×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J0952-0607</th>
+			<th>4XMM J095208.3-060724</th>
+			<th>0.001414</th>
+			<th>4.77×10<sup>-21</sup></th>
+			<th>7.6</th>
+			<th>6.29×10<sup>31</sup></th>
+			<th>2.94×10<sup>31</sup></th>
+			<th>3.45×10<sup>31</sup></th>
+			<th>1.10×10<sup>34</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1012+5307</th>
+			<th>4XMM J101233.3+530701</th>
+			<th>0.005256</th>
+			<th>1.71×10<sup>-20</sup></th>
+			<th>0.7</th>
+			<th>3.10×10<sup>30</sup></th>
+			<th>2.16×10<sup>30</sup></th>
+			<th>8.10×10<sup>29</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1023+0038</th>
+			<th>4XMM J102347.6+003841</th>
+			<th>0.001688</th>
+			<th>6.93×10<sup>-21</sup></th>
+			<th>1.19</th>
+			<th>2.47×10<sup>33</sup></th>
+			<th>8.85×10<sup>32</sup></th>
+			<th>1.58×10<sup>33</sup></th>
+			<th>7.25×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1024-0719</th>
+			<th>4XMM J102438.7-071918</th>
+			<th>0.005162</th>
+			<th>1.86×10<sup>-20</sup></th>
+			<th>1.22</th>
+			<th>2.41×10<sup>30</sup></th>
+			<th>2.10×10<sup>30</sup></th>
+			<th>2.70×10<sup>29</sup></th>
+			<th>7.67×10<sup>32</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1035-6720</th>
+			<th>4XMM J103527.5-672013</th>
+			<th>0.002872</th>
+			<th>4.65×10<sup>-20</sup></th>
+			<th>1.461</th>
+			<th>4.99×10<sup>30</sup></th>
+			<th>2.04×10<sup>30</sup></th>
+			<th>2.72×10<sup>30</sup></th>
+			<th>4.81×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1124-3653</th>
+			<th>2CXO J112401.1-365319</th>
+			<th>0.00241</th>
+			<th>6.01×10<sup>-21</sup></th>
+			<th>0.987</th>
+			<th>7.00×10<sup>30</sup></th>
+			<th>2.80×10<sup>30</sup></th>
+			<th>4.34×10<sup>30</sup></th>
+			<th>1.46×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1227-4853</th>
+			<th>4XMM J122758.7-485342</th>
+			<th>0.001686</th>
+			<th>1.11×10<sup>-20</sup></th>
+			<th>1.613</th>
+			<th>4.62×10<sup>33</sup></th>
+			<th>1.14×10<sup>33</sup></th>
+			<th>3.47×10<sup>33</sup></th>
+			<th>6.98×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1231-1411</th>
+			<th>4XMM J123111.3-141143</th>
+			<th>0.003684</th>
+			<th>2.26×10<sup>-20</sup></th>
+			<th>0.42</th>
+			<th>4.04×10<sup>30</sup></th>
+			<th>3.48×10<sup>30</sup></th>
+			<th>5.19×10<sup>29</sup></th>
+			<th>2.13×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1306-4035<sup>d</sup></th>
+			<th>4XMM J130656.2-403523</th>
+			<th>0.002205</th>
+			<th>---</th>
+			<th>4.7</th>
+			<th>1.99×10<sup>33</sup></th>
+			<th>3.07×10<sup>32</sup></th>
+			<th>1.68×10<sup>33</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1311-3430</th>
+			<th>4XMM J131145.7-343030</th>
+			<th>0.00256</th>
+			<th>2.10×10<sup>-20</sup></th>
+			<th>2.43</th>
+			<th>1.35×10<sup>32</sup></th>
+			<th>4.04×10<sup>31</sup></th>
+			<th>9.43×10<sup>31</sup></th>
+			<th>1.81×10<sup>34</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1326-4728A<sup>a</sup></th>
+			<th>---</th>
+			<th>0.004109</th>
+			<th>2.74×10<sup>-20</sup></th>
+			<th>5.43</th>
+			<th>1.90×10<sup>30</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1326-4728B<sup>ad</sup></th>
+			<th>---</th>
+			<th>0.004792</th>
+			<th>-5.43×10<sup>-20</sup></th>
+			<th>5.43</th>
+			<th>1.07×10<sup>31</sup></th>
+			<th>---</th>
+			<th>---</th>
+			<th>---</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
+		</tr>
+		
+		<tr>
+			<th>J1400-1431</th>
+			<th>4XMM J140037.0-143146</th>
+			<th>0.003084</th>
+			<th>7.23×10<sup>-21</sup></th>
+			<th>0.278</th>
+			<th>1.05×10<sup>29</sup></th>
+			<th>9.13×10<sup>28</sup></th>
+			<th>1.31×10<sup>28</sup></th>
+			<th>5.93×10<sup>31</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1417-4402<sup>d</sup></th>
+			<th>2CXO J141730.5-440257</th>
+			<th>0.002664</th>
+			<th>---</th>
+			<th>4.4</th>
+			<th>1.62×10<sup>33</sup></th>
+			<th>4.76×10<sup>32</sup></th>
+			<th>1.14×10<sup>33</sup></th>
+			<th>---</th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1431-4715</th>
+			<th>4XMM J143144.4-471524</th>
+			<th>0.002012</th>
+			<th>1.41×10<sup>-20</sup></th>
+			<th>1.562</th>
+			<th>7.11×10<sup>30</sup></th>
+			<th>2.46×10<sup>30</sup></th>
+			<th>4.52×10<sup>30</sup></th>
+			<th>1.74×10<sup>33</sup></th>
+			<th>T</th>
+		</tr>
+		
+		<tr>
+			<th>J1446-4701</th>
+			<th>4XMM J144635.8-470126</th>
+			<th>0.002195</th>
+			<th>9.81×10<sup>-21</sup></th>
+			<th>1.569</th>
+			<th>5.02×10<sup>30</sup></th>
+			<th>3.00×10<sup>30</sup></th>
+			<th>1.89×10<sup>30</sup></th>
+			<th>2.26×10<sup>33</sup></th>
+			<th>T</th>
 		</tr>
 		
 		<tr>
@@ -1406,20 +1949,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1531-5610</th>
-			<th>2CXO J153127.8-561055</th>
-			<th>0.084206</th>
-			<th>1.38×10<sup>-14</sup></th>
-			<th>2.841</th>
-			<th>1.81×10<sup>31</sup></th>
-			<th>3.31×10<sup>30</sup></th>
-			<th>1.48×10<sup>31</sup></th>
-			<th>1.76×10<sup>34</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1449,19 +1979,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1617-5055<sup>b</sup></th>
-			<th>2CXO J161729.3-505512</th>
-			<th>0.069357</th>
-			<th>1.35×10<sup>-13</sup></th>
-			<th>4.743</th>
-			<th>9.52×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
 			<th>J1622-0315</th>
 			<th>4XMM J162259.6-031538</th>
 			<th>0.003845</th>
@@ -1484,7 +2001,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1527,19 +2044,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1640-4631</th>
-			<th>2CXO J164043.5-463135</th>
-			<th>0.206443</th>
-			<th>9.76×10<sup>-13</sup></th>
-			<th>12.75</th>
-			<th>1.90×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>9</th>
-		</tr>
-		
-		<tr>
 			<th>J1641+3627B<sup>ad</sup></th>
 			<th>---</th>
 			<th>0.003528</th>
@@ -1549,7 +2053,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1562,7 +2066,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1575,7 +2079,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1588,7 +2092,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1601,7 +2105,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1653,7 +2157,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1666,7 +2170,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1683,19 +2187,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1709-4429<sup>b</sup></th>
-			<th>4XMM J170942.5-442906</th>
-			<th>0.102459</th>
-			<th>9.30×10<sup>-14</sup></th>
-			<th>2.6</th>
-			<th>1.82×10<sup>32</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>1.11×10<sup>36</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
 			<th>J1717+4308A<sup>a</sup></th>
 			<th>---</th>
 			<th>0.00316</th>
@@ -1705,33 +2196,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1718-3825<sup>b</sup></th>
-			<th>2CXO J171813.6-382517</th>
-			<th>0.0746749</th>
-			<th>1.32×10<sup>-14</sup></th>
-			<th>3.488</th>
-			<th>2.43×10<sup>32</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>1.51×10<sup>35</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1722-3712</th>
-			<th>4XMM J172259.2-371206</th>
-			<th>0.23618</th>
-			<th>1.09×10<sup>-14</sup></th>
-			<th>2.477</th>
-			<th>2.10×10<sup>31</sup></th>
-			<th>1.68×10<sup>31</sup></th>
-			<th>2.89×10<sup>30</sup></th>
-			<th>---</th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1774,45 +2239,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1731-4744</th>
-			<th>4XMM J173142.3-474438</th>
-			<th>0.829894</th>
-			<th>1.64×10<sup>-13</sup></th>
-			<th>5.54</th>
-			<th>4.78×10<sup>31</sup></th>
-			<th>2.50×10<sup>31</sup></th>
-			<th>2.08×10<sup>31</sup></th>
-			<th>2.30×10<sup>32</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1732-3131</th>
-			<th>2CXO J173233.5-313123</th>
-			<th>0.196543</th>
-			<th>2.80×10<sup>-14</sup></th>
-			<th>0.641</th>
-			<th>1.11×10<sup>30</sup></th>
-			<th>6.14×10<sup>29</sup></th>
-			<th>5.30×10<sup>29</sup></th>
-			<th>8.79×10<sup>33</sup></th>
-			<th>10</th>
-		</tr>
-		
-		<tr>
-			<th>J1734-3333</th>
-			<th>4XMM J173427.0-333321</th>
-			<th>1.169341</th>
-			<th>2.28×10<sup>-12</sup></th>
-			<th>4.461</th>
-			<th>3.38×10<sup>31</sup></th>
-			<th>2.16×10<sup>31</sup></th>
-			<th>1.16×10<sup>31</sup></th>
-			<th>---</th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J1737-0314A<sup>a</sup></th>
 			<th>---</th>
 			<th>0.00198</th>
@@ -1822,20 +2248,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1740+1000</th>
-			<th>4XMM J174025.9+100006</th>
-			<th>0.154096</th>
-			<th>2.13×10<sup>-14</sup></th>
-			<th>1.227</th>
-			<th>2.68×10<sup>31</sup></th>
-			<th>2.32×10<sup>31</sup></th>
-			<th>3.83×10<sup>30</sup></th>
-			<th>6.49×10<sup>32</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1848,7 +2261,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1861,20 +2274,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1741-2054</th>
-			<th>2CXO J174157.2-205412</th>
-			<th>0.4137</th>
-			<th>1.70×10<sup>-14</sup></th>
-			<th>0.3</th>
-			<th>3.65×10<sup>30</sup></th>
-			<th>2.61×10<sup>30</sup></th>
-			<th>1.04×10<sup>30</sup></th>
-			<th>1.28×10<sup>33</sup></th>
-			<th>10</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1900,33 +2300,7 @@
 			<th><8.32×10<sup>29</sup></th>
 			<th><5.67×10<sup>28</sup></th>
 			<th><5.31×10<sup>33</sup></th>
-			<th>11</th>
-		</tr>
-		
-		<tr>
-			<th>J1747-2809</th>
-			<th>2CXO J174722.7-280914</th>
-			<th>0.052153</th>
-			<th>1.56×10<sup>-13</sup></th>
-			<th>8.141</th>
-			<th>5.30×10<sup>32</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>12</th>
-		</tr>
-		
-		<tr>
-			<th>J1747-2958<sup>b</sup></th>
-			<th>4XMM J174715.6-295801</th>
-			<th>0.098814</th>
-			<th>6.13×10<sup>-14</sup></th>
-			<th>2.52</th>
-			<th>1.48×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>4.30×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://arxiv.org/abs/2307.11132>Smith et al. (2023)</a></th>
 		</tr>
 		
 		<tr>
@@ -1939,7 +2313,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1952,7 +2326,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1965,7 +2339,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1978,7 +2352,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -1991,7 +2365,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2004,7 +2378,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2017,7 +2391,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2030,7 +2404,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2043,7 +2417,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2056,7 +2430,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2069,7 +2443,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2082,7 +2456,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2095,7 +2469,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2108,33 +2482,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1801-2451<sup>b</sup></th>
-			<th>4XMM J180059.9-245127</th>
-			<th>0.124924</th>
-			<th>1.28×10<sup>-13</sup></th>
-			<th>3.803</th>
-			<th>1.54×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>5.52×10<sup>34</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1803-2137<sup>b</sup></th>
-			<th>4XMM J180351.4-213707</th>
-			<th>0.133667</th>
-			<th>1.34×10<sup>-13</sup></th>
-			<th>4.4</th>
-			<th>6.76×10<sup>31</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2147,33 +2495,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1809-1917<sup>b</sup></th>
-			<th>4XMM J180943.1-191737</th>
-			<th>0.082755</th>
-			<th>2.55×10<sup>-14</sup></th>
-			<th>3.268</th>
-			<th>3.23×10<sup>31</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1809-2332</th>
-			<th>2CXO J180950.2-233222</th>
-			<th>0.146789</th>
-			<th>3.44×10<sup>-14</sup></th>
-			<th>0.88</th>
-			<th>6.60×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>1.47×10<sup>35</sup></th>
-			<th>13</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2187,45 +2509,6 @@
 			<th>6.68×10<sup>30</sup></th>
 			<th>9.73×10<sup>33</sup></th>
 			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1811-1925<sup>b</sup></th>
-			<th>4XMM J181129.2-192528</th>
-			<th>0.064667</th>
-			<th>4.40×10<sup>-14</sup></th>
-			<th>5</th>
-			<th>6.97×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1813-1246</th>
-			<th>4XMM J181323.7-124600</th>
-			<th>0.048073</th>
-			<th>1.76×10<sup>-14</sup></th>
-			<th>2.635</th>
-			<th>8.19×10<sup>32</sup></th>
-			<th>2.29×10<sup>31</sup></th>
-			<th>7.96×10<sup>32</sup></th>
-			<th>2.05×10<sup>35</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1813-1749<sup>b</sup></th>
-			<th>4XMM J181335.0-174957</th>
-			<th>0.044741</th>
-			<th>1.27×10<sup>-13</sup></th>
-			<th>6.147</th>
-			<th>5.92×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
 		</tr>
 		
 		<tr>
@@ -2251,7 +2534,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>7.73×10<sup>34</sup></th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2264,7 +2547,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2277,7 +2560,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2290,7 +2573,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2303,7 +2586,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2316,7 +2599,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2329,7 +2612,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2342,8 +2625,9 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
+		
 		
 		<tr>
 			<th>J1825-1446</th>
@@ -2368,7 +2652,7 @@
 			<th>1.65×10<sup>30</sup></th>
 			<th>4.11×10<sup>31</sup></th>
 			<th>1.19×10<sup>35</sup></th>
-			<th>14</th>
+			<th><a https://www.aanda.org/articles/aa/full_html/2019/03/aa34590-18/aa34590-18.html>Duvidovich et al. (2019)</a></th>
 		</tr>
 		
 		<tr>
@@ -2381,7 +2665,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -2394,7 +2678,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>1.79×10<sup>35</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -2420,98 +2704,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1838-0537</th>
-			<th>4XMM J183856.1-053702</th>
-			<th>0.145754</th>
-			<th>4.51×10<sup>-13</sup></th>
-			<th>1.3</th>
-			<th>7.10×10<sup>30</sup></th>
-			<th>2.11×10<sup>28</sup></th>
-			<th>7.07×10<sup>30</sup></th>
-			<th>2.41×10<sup>34</sup></th>
-			<th>10</th>
-		</tr>
-		
-		<tr>
-			<th>J1838-0655<sup>b</sup></th>
-			<th>4XMM J183803.1-065534</th>
-			<th>0.070498</th>
-			<th>4.92×10<sup>-14</sup></th>
-			<th>6.6</th>
-			<th>3.55×10<sup>34</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1844-03<sup>cd</sup></th>
-			<th>4XMM J184455.1-025943</th>
-			<th>6.9713</th>
-			<th>---</th>
-			<th><6.5</th>
-			<th><2.22×10<sup>31</sup></th>
-			<th><4.20×10<sup>30</sup></th>
-			<th><1.76×10<sup>31</sup></th>
-			<th>---</th>
-			<th>15</th>
-		</tr>
-		
-		<tr>
-			<th>J1846+0919</th>
-			<th>2CXO J184625.8+091949</th>
-			<th>0.225552</th>
-			<th>9.93×10<sup>-15</sup></th>
-			<th>1.53</th>
-			<th>1.83×10<sup>30</sup></th>
-			<th>7.38×10<sup>29</sup></th>
-			<th>1.15×10<sup>30</sup></th>
-			<th>9.98×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1849-0001<sup>c</sup></th>
-			<th>4XMM J184901.6-000117</th>
-			<th>0.038523</th>
-			<th>1.42×10<sup>-14</sup></th>
-			<th><7</th>
-			<th><2.53×10<sup>34</sup></th>
-			<th><2.02×10<sup>32</sup></th>
-			<th><2.51×10<sup>34</sup></th>
-			<th>---</th>
-			<th>8</th>
-		</tr>
-		
-		<tr>
-			<th>J1856+0113<sup>b</sup></th>
-			<th>4XMM J185610.6+011324</th>
-			<th>0.26744</th>
-			<th>2.08×10<sup>-13</sup></th>
-			<th>3.3</th>
-			<th>1.08×10<sup>32</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1856+0245</th>
-			<th>2CXO J185650.9+024547</th>
-			<th>0.080907</th>
-			<th>6.21×10<sup>-14</sup></th>
-			<th>6.318</th>
-			<th>1.46×10<sup>32</sup></th>
-			<th>2.69×10<sup>30</sup></th>
-			<th>1.46×10<sup>32</sup></th>
-			<th>---</th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2525,19 +2718,6 @@
 			<th>8.64×10<sup>30</sup></th>
 			<th>7.62×10<sup>33</sup></th>
 			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1907+0602</th>
-			<th>4XMM J190754.8+060214</th>
-			<th>0.106643</th>
-			<th>8.65×10<sup>-14</sup></th>
-			<th>2.576</th>
-			<th>4.43×10<sup>31</sup></th>
-			<th>2.70×10<sup>30</sup></th>
-			<th>4.13×10<sup>31</sup></th>
-			<th>2.36×10<sup>35</sup></th>
-			<th>16</th>
 		</tr>
 		
 		<tr>
@@ -2563,7 +2743,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2576,7 +2756,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2589,7 +2769,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2602,7 +2782,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2615,7 +2795,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2628,33 +2808,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1930+1852<sup>b</sup></th>
-			<th>4XMM J193030.0+185214</th>
-			<th>0.136855</th>
-			<th>7.51×10<sup>-13</sup></th>
-			<th>7</th>
-			<th>1.55×10<sup>34</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J1932+1059<sup>b</sup></th>
-			<th>4XMM J193214.0+105933</th>
-			<th>0.226519</th>
-			<th>1.16×10<sup>-15</sup></th>
-			<th>0.31</th>
-			<th>2.97×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2684,19 +2838,6 @@
 		</tr>
 		
 		<tr>
-			<th>J1952+3252<sup>b</sup></th>
-			<th>2CXO J195258.2+325240</th>
-			<th>0.039531</th>
-			<th>5.84×10<sup>-15</sup></th>
-			<th>3</th>
-			<th>2.91×10<sup>33</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>1.59×10<sup>35</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
 			<th>J1953+1846A<sup>ad</sup></th>
 			<th>---</th>
 			<th>0.004888</th>
@@ -2706,33 +2847,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
-		</tr>
-		
-		<tr>
-			<th>J1957+5033</th>
-			<th>4XMM J195738.1+503321</th>
-			<th>0.374807</th>
-			<th>7.08×10<sup>-15</sup></th>
-			<th>1.365</th>
-			<th>1.53×10<sup>31</sup></th>
-			<th>7.03×10<sup>30</sup></th>
-			<th>7.41×10<sup>30</sup></th>
-			<th>5.83×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J1958+2846</th>
-			<th>2CXO J195840.0+284554</th>
-			<th>0.290389</th>
-			<th>2.12×10<sup>-13</sup></th>
-			<th>1.95</th>
-			<th>3.56×10<sup>30</sup></th>
-			<th>3.66×10<sup>30</sup></th>
-			<th>---</th>
-			<th>4.82×10<sup>34</sup></th>
-			<th>T</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2749,19 +2864,6 @@
 		</tr>
 		
 		<tr>
-			<th>J2017+3625<sup>c</sup></th>
-			<th>2CXO J201755.8+362507</th>
-			<th>0.166749</th>
-			<th>1.36×10<sup>-15</sup></th>
-			<th><0.656</th>
-			<th><1.03×10<sup>30</sup></th>
-			<th><2.06×10<sup>29</sup></th>
-			<th><8.56×10<sup>29</sup></th>
-			<th><2.01×10<sup>36</sup></th>
-			<th>3</th>
-		</tr>
-		
-		<tr>
 			<th>J2017-1614</th>
 			<th>4XMM J201746.0-161416</th>
 			<th>0.002314</th>
@@ -2775,58 +2877,6 @@
 		</tr>
 		
 		<tr>
-			<th>J2021+3651<sup>b</sup></th>
-			<th>4XMM J202105.3+365103</th>
-			<th>0.103741</th>
-			<th>9.57×10<sup>-14</sup></th>
-			<th>1.8</th>
-			<th>6.34×10<sup>32</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>1.91×10<sup>35</sup></th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J2021+4026</th>
-			<th>4XMM J202130.7+402645</th>
-			<th>0.265328</th>
-			<th>5.48×10<sup>-14</sup></th>
-			<th>2.15</th>
-			<th>2.50×10<sup>31</sup></th>
-			<th>1.01×10<sup>31</sup></th>
-			<th>1.46×10<sup>31</sup></th>
-			<th>2.16×10<sup>35</sup></th>
-			<th>17</th>
-		</tr>
-		
-		<tr>
-			<th>J2022+3842</th>
-			<th>2CXO J202221.6+384214</th>
-			<th>0.048579</th>
-			<th>8.61×10<sup>-14</sup></th>
-			<th>10</th>
-			<th>4.76×10<sup>33</sup></th>
-			<th>3.04×10<sup>32</sup></th>
-			<th>4.49×10<sup>33</sup></th>
-			<th>3.17×10<sup>35</sup></th>
-			<th>10</th>
-		</tr>
-		
-		<tr>
-			<th>J2030+4415</th>
-			<th>2CXO J203051.3+441539</th>
-			<th>0.227071</th>
-			<th>5.05×10<sup>-15</sup></th>
-			<th>0.72</th>
-			<th>9.08×10<sup>29</sup></th>
-			<th>3.89×10<sup>29</sup></th>
-			<th>5.03×10<sup>29</sup></th>
-			<th>1.32×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J2043+1711</th>
 			<th>2CXO J204320.8+171129</th>
 			<th>0.00238</th>
@@ -2836,19 +2886,6 @@
 			<th>1.87×10<sup>30</sup></th>
 			<th>---</th>
 			<th>6.57×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J2043+2740</th>
-			<th>4XMM J204343.4+274056</th>
-			<th>0.096131</th>
-			<th>1.27×10<sup>-15</sup></th>
-			<th>1.48</th>
-			<th>7.69×10<sup>30</sup></th>
-			<th>3.86×10<sup>30</sup></th>
-			<th>3.30×10<sup>30</sup></th>
-			<th>2.37×10<sup>33</sup></th>
 			<th>T</th>
 		</tr>
 		
@@ -2879,19 +2916,6 @@
 		</tr>
 		
 		<tr>
-			<th>J2055+2539</th>
-			<th>4XMM J205548.9+253958</th>
-			<th>0.319561</th>
-			<th>4.10×10<sup>-15</sup></th>
-			<th>0.62</th>
-			<th>9.89×10<sup>29</sup></th>
-			<th>4.06×10<sup>29</sup></th>
-			<th>5.82×10<sup>29</sup></th>
-			<th>2.44×10<sup>33</sup></th>
-			<th>T</th>
-		</tr>
-		
-		<tr>
 			<th>J2115+5448</th>
 			<th>4XMM J211511.7+544844</th>
 			<th>0.002603</th>
@@ -2914,7 +2938,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>7.80×10<sup>32</sup></th>
-			<th>2</th>
+			<th><a https://academic.oup.com/mnras/article/502/1/390/6123927>Hsiang & Chang (2021)</a></th>
 		</tr>
 		
 		<tr>
@@ -2931,19 +2955,6 @@
 		</tr>
 		
 		<tr>
-			<th>J2139+4716<sup>c</sup></th>
-			<th>2CXO J213955.9+471613</th>
-			<th>0.282849</th>
-			<th>1.79×10<sup>-15</sup></th>
-			<th><0.8</th>
-			<th><5.7×10<sup>29</sup></th>
-			<th><1.1×10<sup>29</sup></th>
-			<th><4.88×10<sup>29</sup></th>
-			<th><4.65×10<sup>35</sup></th>
-			<th>18</th>
-		</tr>
-		
-		<tr>
 			<th>J2140-2310A<sup>ad</sup></th>
 			<th>---</th>
 			<th>0.011019</th>
@@ -2953,7 +2964,7 @@
 			<th>---</th>
 			<th>---</th>
 			<th>---</th>
-			<th>1</th>
+			<th><a https://academic.oup.com/mnras/article/511/4/5964/6530660>Zhao & Heinke (2022)</a></th>
 		</tr>
 		
 		<tr>
@@ -2980,32 +2991,6 @@
 			<th>1.10×10<sup>32</sup></th>
 			<th>1.53×10<sup>34</sup></th>
 			<th>T</th>
-		</tr>
-		
-		<tr>
-			<th>J2225+6535<sup>b</sup></th>
-			<th>2CXO J222552.8+653536</th>
-			<th>0.682542</th>
-			<th>9.66×10<sup>-15</sup></th>
-			<th>0.9</th>
-			<th>1.45×10<sup>30</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>---</th>
-			<th>2</th>
-		</tr>
-		
-		<tr>
-			<th>J2229+6114<sup>b</sup></th>
-			<th>2CXO J222905.2+611409</th>
-			<th>0.051648</th>
-			<th>7.74×10<sup>-14</sup></th>
-			<th>3</th>
-			<th>3.82×10<sup>32</sup></th>
-			<th>---</th>
-			<th>---</th>
-			<th>2.59×10<sup>35</sup></th>
-			<th>2</th>
 		</tr>
 		
 		<tr>
@@ -3061,6 +3046,21 @@
 		</tr>
 	
 	</table>
+
+	<h2>Footnotes</h2>
+		
+	<ul>
+		<li>L<sub>X</sub>: X-ray luminosity in 0.3--10.0 keV for XMM-Newton, and in 0.5-7.0 keV for Chandra. </li>
+		<li>L<sub>SX</sub>: Soft X-ray luminosity in 0.3--2.0 keV for XMM-Newton, and in 0.5-2.0 keV for Chandra. </li>
+		<li>L<sub>HX</sub>: Hard X-ray luminosity in 2.0--10.0 keV for XMM-Newton, and in 2.0-7.0 keV for Chandra. </li>
+		<li>L<sub>G</sub>: G-ray luminosity in 100 MeV.</li>
+		<li>L: The error of luminosity plotted in figures is canculated from the flux error in catalogs, ranging between 10% ~ 30%. But in fact the error caused by DM is dominant, lacking in the table.</li>
+		<li><sup>a</sup>: The pulsars are MSP in GCs, and the X-ray luminosities of which are acquired from <a href="https://academic.oup.com/mnras/article/511/4/5964/6530660">Zhao & Heinke (2022)</a>.</li>
+		<li><sup>b</sup>: The pulsars are associated with PWNe or SNRs, and the X-ray luminosities of which are acquired from <a href="https://academic.oup.com/mnras/article/502/1/390/6123927">Hsiang & Chang (2021)</a>.</li>
+		<li><sup>c</sup>: The up-limits of these distance are inferred from the spin-down power Edot and the energy flux G<sub>100</sub> above 100 MeV, with reference listed in column "Ref". The distance of other pulsars are acquired from ATNF catalogue estimated by YMW16 electron distribution model <a href="https://iopscience.iop.org/article/10.3847/1538-4357/835/1/29">(Yao et al. 2017)</a>.</li>
+		<li><sup>d</sup>: The Pdot is not available or is minus given by ATNF catalogue. These pulsars are excluded in the following correlation analysis work.</li>
+	</ul>
+
 	
 </body>
 </html>
